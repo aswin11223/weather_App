@@ -29,14 +29,14 @@ class _homescreenState extends State<homescreen> {
 
   weatherr? data;
   Future<void> getdata() async {
-    data = await client.getcuurentlocation("Georgia");
+    data = await client.getcuurentlocation("Kochi");
   }
 
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
-    client.getcuurentlocation("Georgia");
+    client.getcuurentlocation("Kochi");
   }
 
   Widget build(BuildContext context) {
